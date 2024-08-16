@@ -1,0 +1,706 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Radio+Canada+Big:ital,wght@0,400..700;1,400..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* global */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background-color: var(--white-clr);
+
+
+}
+
+:root {
+    --first-clr: #EB1412;
+    --second-clr: #101A24;
+    --black-clr: #000000;
+    --white-clr: #fff;
+    --third-clr: #FFD143;
+}
+
+.btn {
+    height: 45px;
+    width: auto;
+    padding: 0px 25px;
+    border-radius: 20px 5px;
+    background: var(--first-clr);
+    border: none;
+    color: var(--white-clr);
+    font-weight: 400;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* l */
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--black-clr);
+}
+
+/* nav bar section */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+div.header-center {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: transparent;
+    height: auto;
+}
+
+div.logo {
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+div.sidebar {
+    margin: 0 250px;
+    padding-top: 10px;
+}
+
+.logo a {
+    color: #000;
+    font-family: Inter;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.clicked {
+    color: var(--first-clr);
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 10px;
+    width: 100px;
+}
+
+nav ul li a {
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--black-clr);
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: var(--first-clr);
+}
+
+div.header-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 180px;
+}
+
+#menu-close,
+#menu-open {
+    display: none;
+}
+
+/*                   section-1                        */
+.hero-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh;
+    position: relative;
+    overflow: hidden;
+    padding: 20px 0;
+}
+
+.recipes-container-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.hero-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+}
+
+.text-section {
+    max-width: 40%;
+    z-index: 2;
+}
+
+.text-section h1 {
+    color: #101A24;
+    font-family: "Irish Grover";
+    font-size: 61px;
+    font-style: normal;
+    font-weight: 400;
+    padding: 0px;
+    border: 3px solid #F54E42;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.text-section p {
+    color: #5C6574;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.buttons {
+    margin: 50px 0 70px 0;
+}
+
+.menu-btn,
+.book-btn {
+    padding: 15px 30px;
+}
+
+.menu-btn {
+    background-color: #111;
+    margin-right: 20px;
+}
+
+.book-btn {
+    background-color: #F54E42;
+}
+
+.menu-btn:hover,
+.book-btn:hover {
+    opacity: 0.8;
+}
+
+.social-icons {
+    margin: 20px 0 0 20px;
+    display: flex;
+    align-items: center;
+}
+
+.social-icons::after {
+    content: "";
+    width: 183px;
+    height: 1px;
+    margin-left: 20px;
+    opacity: .3;
+    background-color: black;
+}
+
+.social-icons a {
+    margin-right: 15px;
+    display: inline-block;
+    border: 1px solid #000;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+}
+
+.social-icons i {
+    color: var(--black-clr);
+}
+
+.section-1-imgs {
+    position: relative;
+    max-width: 60%;
+    margin-right: 5%;
+}
+
+
+.food-img {
+    position: absolute;
+    top: -10px;
+    left: -100px;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    z-index: 3;
+    animation: rotate 10s linear infinite;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.restaurant-img {
+    width: 350px;
+    border-radius: 20px;
+    z-index: 2;
+}
+
+img.section-1-top-left-img,
+img.section-1-bottom-left-img {
+    position: absolute;
+    width: 210px;
+    height: auto;
+    z-index: -1;
+}
+
+img.section-1-top-left-img {
+    top: -70px;
+    right: -120px;
+}
+
+img.section-1-bottom-left-img {
+    bottom: -30px;
+    left: -150px;
+    opacity: .2;
+}
+
+/*              section-2                     */
+
+.recipes-container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+.featured-recipes {
+    margin-top: 50px;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+h2 span {
+    color: #F54E42;
+}
+
+.recipes-grid {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.recipe-card {
+    background-color: var(--white-clr);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    margin-bottom: 20px;
+    padding: 15px;
+    text-align: left;
+    position: relative;
+}
+
+.img-container img {
+    width: 260px;
+    height: 180px;
+    z-index: 10;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.recipe-card h3 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.recipe-card p {
+    font-size: 14px;
+    color: #666;
+}
+
+.img-container {
+    background-image: url("images/food-bg-img-6.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 250px;
+    border-radius: 15px;
+    position: relative;
+}
+
+.price-badge,
+.days-badge {
+    position: absolute;
+    color: #fff;
+    font-size: 12px;
+    z-index: 5;
+}
+
+.days-badge h4 {
+    color: var(--white-clr);
+    font-weight: 100;
+}
+
+.days-badge {
+    background-color: #4F5A65;
+    border-radius: 18px 5px;
+    width: 100px;
+    height: 39px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.price-badge {
+    background-image: url(images/vector.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 38px;
+    height: 35px;
+    top: 20px;
+    left: 20px;
+}
+
+.price-badge h4 {
+    color: var(--white-clr);
+    font-weight: 100;
+    position: absolute;
+    right: 10px;
+    top: -5px;
+}
+
+
+
+.view-more:hover {
+    background-color: #444;
+}
+
+/*                   section-3                        */
+
+.menu-container {
+    padding: 50px 20px;
+    background-color: var(--second-clr);
+    text-align: center;
+}
+
+.menu-container h1 {
+    font-family: "Irish Grover";
+    font-size: 61px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 72px;
+    color: var(--white-clr);
+}
+
+.menu-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-image img {
+    width: 550px;
+    height: 550px;
+    border-radius: 10px;
+    margin: 0 50px;
+}
+
+.menu-list {
+    margin-left: 30px;
+    text-align: left;
+}
+
+.menu-list h2 {
+    font-size: 2em;
+    color: var(--third-clr);
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.menu-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.menu-item img {
+    width: 50px;
+    height: 50px;
+    margin-right: 15px;
+}
+
+.menu-item-description {
+    flex: 1;
+}
+
+.menu-item-description h3 {
+    margin: 0 0 5px 0;
+    font-size: 1.2em;
+    color: var(--white-clr);
+}
+
+.menu-item-description p {
+    margin: 0;
+    font-size: 0.9em;
+    color: var(--white-clr);
+    opacity: .4;
+}
+
+.menu-item-price {
+    font-size: 1.2em;
+    color: var(--third-clr);
+    margin: 0 50px;
+}
+
+h2.red,
+.red {
+    color: var(--first-clr);
+}
+
+/*                 section-4                      */
+
+.specials-section {
+    padding: 20px 20px 60px 20px;
+}
+
+.specials-section h1 {
+    font-size: 2.5em;
+    margin-bottom: 50px;
+    line-height: 1.3;
+    text-align: center;
+
+}
+
+.specials-section .highlight {
+    color: var(--first-clr);
+    font-family: "Irish Grover";
+    font-size: 31px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 72px;
+}
+
+.specials-content {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.video-container {
+    width: 45%;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 600px;
+    position: relative;
+}
+
+video {
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+
+
+/*                  section-5                     */
+
+.testimonials-section {
+    padding: 40px 20px 100px 20px;
+    background-color: var(--second-clr);
+
+}
+
+.testimonials-section h1 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 40px;
+    line-height: 1.3;
+}
+
+.testimonials-section .highlight {
+    color: var(--first-clr);
+    font-family: 'Cursive', sans-serif;
+}
+
+.testimonials-content {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.testimonial-card {
+    background-color: var(--white-clr);
+    color: #333;
+    width: 500px;
+    height: 200px;
+    border-radius: 25px 55px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.testimonial-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.testimonial-header img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.testimonial-details h3 {
+    margin: 0;
+    font-size: 1.2em;
+}
+
+.testimonial-details p {
+    margin: 0;
+    font-size: 0.9em;
+    color: #666;
+}
+
+.testimonial-text {
+    font-size: 1em;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.testimonial-footer {
+    font-size: 0.9em;
+    color: var(--first-clr);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.testimonial-footer span img {
+    width: 16px;
+    height: 16px;
+}
+
+.testimonial-footer span {
+    margin: 5px 10px 0 40px;
+}
+
+.testimonial-dots {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.testimonial-dots .dot {
+    height: 12px;
+    width: 12px;
+    background-color: #888;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.testimonial-dots .dot.active {
+    background-color: #e74c3c;
+}
+
+/*                  section-6                     */
+.newsletter-section {
+    padding: 70px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.overlay {
+    width: 1240px;
+    height: 534px;
+    background-image: url('images/newsletter-center-img.png');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.overlay h1 {
+    text-align: center;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: "Irish Grover";
+    font-size: 61px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 72px;
+    margin-bottom: 70px;
+    color: var(--white-clr);
+}
+
+.input-container {
+    position: relative;
+    display: flex;
+    width: 600px;
+    height: 60px;
+}
+
+.input-container input[type="email"] {
+    flex: 1;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+}
+
+.input-container button {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    background-color: var(--first-clr);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.input-container button:hover {
+    background-color: #e60000b6;
+}
