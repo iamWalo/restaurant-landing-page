@@ -5,12 +5,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>restaurant landing page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Irish+Grover&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Radio+Canada+Big:ital,wght@0,400..700;1,400..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
 </head>
 
 <body>
+    <h1>
+        <div class="loader">Loading, please wait...
+    </h1>
+    </div>
     <section class="header">
         <div class="header-center">
             <div class="logo">
@@ -63,7 +72,7 @@
         <section class="trendy-recipes">
             <div class="recipes-container-header">
                 <h2>Trendy <span>Recipes</span></h2>
-                <button class="view-more btn">View more</button>
+                <button class="view-more btn ">View more</button>
             </div>
             <div class="recipes-grid">
                 <div class="recipe-card">
@@ -329,67 +338,129 @@
             </div>
         </div>
     </section>
+
     <section class="testimonials-section">
         <h1><span class="highlight">Testimonials</span><br>Hear from Our Clients</h1>
-        <div class="testimonials-content">
-            <div class="testimonial-card">
-                <div class="testimonial-header">
-                    <img src="images/testimonial-img.png" alt="Templeton Peck">
-                    <div class="testimonial-details">
-                        <h3>Templeton Peck</h3>
-                        <p>Food Critic at Culinary Delights</p>
+        <div class="testimonials-content swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="testimonial-card ">
+                        <img src="images/testimonial-img.png" alt="Templeton Peck">
+                        <div>
+                            <div class="testimonial-header">
+                                <h3>Templeton Peck</h3>
+                                <p>Food Critic at Culinary Delights</p>
+                            </div>
+                            <p class="testimonial-text">
+                                « The dining experience was nothing short of exceptional. The flavors were perfectly
+                                balanced,
+                                and
+                                the service was top-notch. I can't wait to come back! »
+                            </p>
+                            <div class="testimonial-footer">
+                                <img src="images/logo.png" alt="">
+                                <span>2024.08.15</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <p class="testimonial-text">
-                    « The dining experience was nothing short of exceptional. The flavors were perfectly balanced, and
-                    the service was top-notch. I can't wait to come back! »
-                </p>
-                <div class="testimonial-footer">
-                    <span><img src="images/logo.png" alt=""></span> 2024.08.15
-                </div>
-            </div>
-            <div class="testimonial-card">
-                <div class="testimonial-header">
-                    <img src="images/testimonial-img.png" alt="Templeton Peck">
-                    <div class="testimonial-details">
-                        <h3>Templeton Peck</h3>
-                        <p>Food Critic at Culinary Delights</p>
+                <div class="swiper-slide">
+                    <div class="testimonial-card ">
+                        <img src="images/testimonial-img.png" alt="Templeton Peck">
+                        <div>
+                            <div class="testimonial-header">
+                                <h3>Templeton Peck</h3>
+                                <p>Food Critic at Culinary Delights</p>
+                            </div>
+                            <p class="testimonial-text">
+                                « The dining experience was nothing short of exceptional. The flavors were perfectly
+                                balanced,
+                                and
+                                the service was top-notch. I can't wait to come back! »
+                            </p>
+                            <div class="testimonial-footer">
+                                <img src="images/logo.png" alt="">
+                                <span>2024.08.15</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <p class="testimonial-text">
-                    « The dining experience was nothing short of exceptional. The flavors were perfectly balanced, and
-                    the service was top-notch. I can't wait to come back! »
-                </p>
-                <div class="testimonial-footer">
-                    <span><img src="images/logo.png" alt=""></span> 2024.08.15
-                </div>
-            </div>
-            <div class="testimonial-card">
-                <div class="testimonial-header">
-                    <img src="images/testimonial-img.png" alt="Templeton Peck">
-                    <div class="testimonial-details">
-                        <h3>Templeton Peck</h3>
-                        <p>Food Critic at Culinary Delights</p>
+                <div class="swiper-slide">
+                    <div class="testimonial-card ">
+                        <img src="images/testimonial-img.png" alt="Templeton Peck">
+                        <div>
+                            <div class="testimonial-header">
+                                <h3>Templeton Peck</h3>
+                                <p>Food Critic at Culinary Delights</p>
+                            </div>
+                            <p class="testimonial-text">
+                                « The dining experience was nothing short of exceptional. The flavors were perfectly
+                                balanced,
+                                and
+                                the service was top-notch. I can't wait to come back! »
+                            </p>
+                            <div class="testimonial-footer">
+                                <img src="images/logo.png" alt="">
+                                <span>2024.08.15</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <p class="testimonial-text">
-                    « The dining experience was nothing short of exceptional. The flavors were perfectly balanced, and
-                    the service was top-notch. I can't wait to come back! »
-                </p>
-                <div class="testimonial-footer">
-                    <span><img src="images/logo.png" alt=""></span> 2024.08.15
+                <div class="swiper-slide">
+                    <div class="testimonial-card ">
+                        <img src="images/testimonial-img.png" alt="Templeton Peck">
+                        <div>
+                            <div class="testimonial-header">
+                                <h3>Templeton Peck</h3>
+                                <p>Food Critic at Culinary Delights</p>
+                            </div>
+                            <p class="testimonial-text">
+                                « The dining experience was nothing short of exceptional. The flavors were perfectly
+                                balanced,
+                                and
+                                the service was top-notch. I can't wait to come back! »
+                            </p>
+                            <div class="testimonial-footer">
+                                <img src="images/logo.png" alt="">
+                                <span>2024.08.15</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="testimonial-card ">
+                        <img src="images/testimonial-img.png" alt="Templeton Peck">
+                        <div>
+                            <div class="testimonial-header">
+                                <h3>Templeton Peck</h3>
+                                <p>Food Critic at Culinary Delights</p>
+                            </div>
+                            <p class="testimonial-text">
+                                « The dining experience was nothing short of exceptional. The flavors were perfectly
+                                balanced,
+                                and
+                                the service was top-notch. I can't wait to come back! »
+                            </p>
+                            <div class="testimonial-footer">
+                                <img src="images/logo.png" alt="">
+                                <span>2024.08.15</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="testimonial-dots">
-            <span class="dot active"></span>
-            <span class="dot"></span>
-            <span class="dot"></span>
-            <span class="dot"></span>
-            <span class="dot"></span>
+        <div class="testimonial-section-footer">
+            <div class="testimonial-dots">
+                <span class="dot active"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
         </div>
     </section>
-    <div class="newsletter-section">
+    <section class="newsletter-section">
         <div class="overlay">
             <h1>Get Your Promo Code by Joining <br> Our Newsletter</h1>
             <div class="input-container">
@@ -397,11 +468,58 @@
                 <button>Subscribe</button>
             </div>
         </div>
-    </div>
+    </section>
+    <footer class="footer-section">
+        <div class="footer-top">
+            <img src="images/footer-logo.png" alt="Logo" class="footer-logo">
+            <ul class="footer-menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Trends</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Get in touch</a></li>
+                <li><a href="#">FAQs</a></li>
+            </ul>
+            <div class="footer-social">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="footer-languages">
+                <a href="#" class="language active-language">English</a>
+                <a href="#" class="language">Arabic</a>
+                <a href="#" class="language">French</a>
+            </div>
+            <div class="footer-copyright">
+                &copy; 2024 Rich Technologies. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
 
 
     <script src="script.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            loop: true,
+            slidesPerView: 3,
+            spaceBetween: 40,
+            autoplay: {
+                delay: 4500,
+            },
+            pagination: {
+                el: '.testimonial-dots',
+                clickable: true,
+                bulletClass: 'dot',
+                bulletActiveClass: 'active'
+            }
+        });
+    </script>
 
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 </body>
 
 </html>
